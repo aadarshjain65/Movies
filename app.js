@@ -75,7 +75,7 @@ app.get('/movies/:movieId/', async (request, response) => {
       leadActor: movie.lead_actor,
     }
   }
-  response.send(ans)
+  response.send(ans(movie));
 })
 
 // Update Movie API
